@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>welcome to BATEAUX MOUCHES's website</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <script type="text/javascript">
+		function mouseOver(){
+			document.getElementById("btn_map").src ="btn_map02.png";
+		}
+		function mouseOut(){
+			document.getElementById("btn_map").src ="btn_map01.png";
+		}
+		function showID(id){
+			document.getElementById("btn_map").visible="none";
+			obj=document.getElementById(id);			
+			if(obj.style.display == "none")
+				obj.style.display="inline";
+			else
+				obj.style.display="none";
+		}
+	</script>
+  <style type="text/css">
+	#secondbody{
+		clear: both;
+		margin: 0 auto 20px 0;
+		padding: 0;
+		background-color: black;
+		color: white;		
+	}
+	#main-menu{
+		margin: 0 auto 0 350px;
+		width:600;height:50;
+		background-color:#000000;color:#ffffff;}
+	
+	#content{
+		align: center;
+		style: display:none;
+	}
+	#main-content{
+		left:0;top:150;
+		width:600;height:200;
+		background-color:#000000;}
+
+	#map{
+		margin: 0;
+		padding: 0;
+		width: 1900;
+		height: 800px;
+		background-image:url('bg_map.png');
+		background-repeat: no-repeat;}
+	
+	a:link{
+		color:white;
+		text-decoration:none}
+	a:active{
+		color:#9d0d21;
+		text-decoration:none}
+	a:hover{
+		color:#9d0d21;
+		text-decoration:none}
+	
+  </style>
+ 
+ </head>
+ 
+ <body id="secondbody" vlink="white" >		
+	<br>
+	<hr color='#9d0d21'>	
+	<div id="main-menu">
+		<a href="second.html">
+		<br><img src="logo.png"  hspace="50" >
+		</a>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a href="second.html" align='right'>
+											H O M E
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</a>
+		
+		<a href="route.html" align='right'>
+											R O U T E
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</a>
+		
+		<a href="scene.html" align='right'>
+											S C E N E
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</a>
+		
+		<a href="informations.html" align='right'>
+											I N F O R M A T I O N S
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</a>
+		
+		<a href="insert.php" align='right'>
+											R E S E R V A T I O N
+		</a>
+		
+	</div>
+	<br>
+	<div id="map"><br><br>		
+		<h3 align="center">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.695816896646!2d2.303748716110595!3d48.864010579288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fda56cd2849%3A0xeb1543c56c29aad3!2sBateaux-Mouches!5e0!3m2!1sko!2skr!4v1465206545886"
+		width="1900" height="430" frameborder="10" style="border:10" allowfullscreen></iframe>
+		</h3><br>
+		<div align="center">
+			<img id="btn_map" src="btn_map01.png" onMouseOver="mouseOver()" onMouseOut="mouseOut()" onclick="showID('content');">
+			<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<div id="content" >
+				<img src="bg_map_bottom.png">
+			</div>
+			<br>
+				
+		</div>
+	</div>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+	<center>Copyright &copy; 2016. YangHanJin All rights reserved</center> 		
+ </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>welcome to BATEAUX MOUCHES's website</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<script type="text/javascript">
+		function wait(){
+			window.open('second.html')}
+		function mouseOver(){
+			document.getElementById("btn_skip").src ="btn_loading02.png";
+		}
+		function mouseOut(){
+			document.getElementById("btn_skip").src ="btn_loading01.png";
+		}
+	</script>
+	
+	<style type="text/css">
+	#firstbody{
+		clear: both;
+		margin: 0 auto 20px 0;
+		padding: 0;
+		background-color: black;
+		color: white;		
+	}
+	#container{
+		margin: 0;
+		padding: 0;
+		width: 1930px;
+        height: 800px;
+		background-image:url('bg_loading.png');
+		background-repeat: no-repeat;
+	}
+	</style>
+ </head>
+ 
+ <body id="firstbody" vlink="white" onLoad="setTimeout('wait()',5000)" >
+	<br><br>
+	<div id="container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<b style="font-size:50px; color: white">
+		<h4 align="center">
+			Please be waiting
+			<br><br>
+			<a href="second.html" onClick="return confirm('Have a good day!')">
+			<img id="btn_skip" src="btn_loading01.png" width="100" border="0" onMouseOver="mouseOver()" onMouseOut="mouseOut()"></a>
+		</h4>
+	<marquee behavior="alternate" hspace="800" vspace="10"><img src="Paperboat.png" width="70"></marquee></b>
+	</div><br><br>
+	<center>Copyright &copy; 2016. YangHanJin All rights reserved</center> 
+ </body>
+</html>
